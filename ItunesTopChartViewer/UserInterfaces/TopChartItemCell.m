@@ -10,4 +10,16 @@
 
 @implementation TopChartItemCell
 
+- (void)awakeFromNib {
+    [self setShadowForView:_titleLabel];
+    [self setShadowForView:_subtitleLabel];
+}
+
+- (void)setShadowForView:(UIView *)view {
+    view.layer.shadowColor = [[UIColor blackColor] CGColor];
+    view.layer.shadowOffset = CGSizeZero;
+    view.layer.shadowRadius = 3.0f;
+    view.layer.shadowOpacity = 1.0f;
+}
+
 @end
