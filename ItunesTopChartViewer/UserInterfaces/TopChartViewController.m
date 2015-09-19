@@ -11,11 +11,14 @@
 #import "TopChartItemCell.h"
 #import "TopChartFetcher.h"
 #import "AlbumMeta.h"
+#import <AFNetworking/AFNetworking.h>
+#import "ImageMeta.h"
 
 @interface TopChartViewController () {
     TopChartFetcher *_topChartFetcher;
     NSArray *_albums;
     NSDictionary *_albumIDIndexPathMap;
+    NSURLSession *_session;
 }
 @property (nonatomic, readonly) UICollectionViewFlowLayout *myFlowLayout;
 @end
@@ -30,6 +33,7 @@ static NSString * const reuseIdentifier = @"TopChartItemCellID";
         _topChartFetcher = [[TopChartFetcher alloc] init];
         [self registerFetcherNotifications];
         [_topChartFetcher fetchTopChart];
+        _session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
     }
     return self;
 }
@@ -106,7 +110,34 @@ static NSString * const reuseIdentifier = @"TopChartItemCellID";
     AlbumMeta *meta = [self albumMetaForIndexPath:indexPath];
     cell.titleLabel.text = meta.title;
     cell.subtitleLabel.text = meta.artists;
+    cell.imageView.image = nil;
+    [self loadCoverImageForAlbumMeta:meta];
     return cell;
+}
+
+- (void)loadCoverImageForAlbumMeta:(AlbumMeta *)meta {
+    __weak TopChartViewController *weakSelf = self;
+    NSURLSessionTask *task = [_session dataTaskWithURL:[meta.coverImageMeta imageURLWithLength:320]
+                                     completionHandler:
+                              ^(NSData *data, NSURLResponse *response, NSError * error) {
+                                  TopChartViewController *strongSelf = weakSelf;
+                                  if (strongSelf) {
+                                      [strongSelf setImageData:data forAlbumMeta:meta];
+                                  }
+                              }];
+    [task resume];
+}
+
+- (void)setImageData:(NSData *)data
+        forAlbumMeta:(AlbumMeta *)meta {
+    [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+        TopChartItemCell *cell = [self cellForAlbumMeta:meta];
+        cell.imageView.image = [UIImage imageWithData:data];
+    }];
+}
+
+- (TopChartItemCell *)cellForAlbumMeta:(AlbumMeta *)meta {
+    return (TopChartItemCell *)[self.collectionView cellForItemAtIndexPath:[self indexPathForAlbumMeta:meta]];
 }
 
 - (AlbumMeta *)albumMetaForIndexPath:(NSIndexPath *)indexPath {
