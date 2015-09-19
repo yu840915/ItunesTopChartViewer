@@ -26,7 +26,7 @@
             </objects>
             <point key="canvasLocation" x="-400" y="409"/>
         </scene>
-        <!--Top Chart View Controller-->
+        <!--Top Hits-->
         <scene sceneID="Vdy-sY-7KM">
             <objects>
                 <collectionViewController id="R2m-NF-yiD" customClass="TopChartViewController" sceneMemberID="viewController">
@@ -53,13 +53,13 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZU1-wI-42u" userLabel="Label Container View">
                                             <rect key="frame" x="40" y="138" width="240" height="44"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNk-Qd-YbP" userLabel="Title Label">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNk-Qd-YbP" userLabel="Title Label">
                                                     <rect key="frame" x="0.0" y="0.0" width="240" height="22"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJQ-OH-WOp" userLabel="Subtitle Label">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJQ-OH-WOp" userLabel="Subtitle Label">
                                                     <rect key="frame" x="0.0" y="27" width="240" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
@@ -102,7 +102,7 @@
                             <outlet property="delegate" destination="R2m-NF-yiD" id="LSQ-Ed-JNl"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="tXc-Wa-VEs"/>
+                    <navigationItem key="navigationItem" title="Top Hits" id="tXc-Wa-VEs"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A9d-Md-zDZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

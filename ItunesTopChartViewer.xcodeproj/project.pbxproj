@@ -179,10 +179,10 @@
 		312BD6C61BAD2C6B00AE5B46 /* UserInterfaces */ = {
 			isa = PBXGroup;
 			children = (
-				312BD6C71BAD2C6B00AE5B46 /* TopChartItemCell.h */,
-				312BD6C81BAD2C6B00AE5B46 /* TopChartItemCell.m */,
 				312BD6C91BAD2C6B00AE5B46 /* TopChartViewController.h */,
 				312BD6CA1BAD2C6B00AE5B46 /* TopChartViewController.m */,
+				312BD6C71BAD2C6B00AE5B46 /* TopChartItemCell.h */,
+				312BD6C81BAD2C6B00AE5B46 /* TopChartItemCell.m */,
 				312BD6CD1BAD2C9500AE5B46 /* TopChartFlowLayout.h */,
 				312BD6CE1BAD2C9500AE5B46 /* TopChartFlowLayout.m */,
 			);
