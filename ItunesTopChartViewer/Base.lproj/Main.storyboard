@@ -1,7 +1,112 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tpU-qB-v12">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="4jU-j7-YXI">
+            <objects>
+                <navigationController id="tpU-qB-v12" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="YmF-5L-FNO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="R2m-NF-yiD" kind="relationship" relationship="rootViewController" id="rpk-0r-T2v"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="agt-IN-enL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-400" y="409"/>
+        </scene>
+        <!--Top Chart View Controller-->
+        <scene sceneID="Vdy-sY-7KM">
+            <objects>
+                <collectionViewController id="R2m-NF-yiD" customClass="TopChartViewController" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="NkJ-21-PRV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="d0v-zy-uMj">
+                            <size key="itemSize" width="320" height="320"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TopChartItemCellID" id="A7R-W0-6c1" customClass="TopChartItemCell">
+                                <rect key="frame" x="47" y="64" width="320" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LX6-SS-PhP">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZU1-wI-42u" userLabel="Label Container View">
+                                            <rect key="frame" x="40" y="138" width="240" height="44"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNk-Qd-YbP" userLabel="Title Label">
+                                                    <rect key="frame" x="0.0" y="0.0" width="240" height="22"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJQ-OH-WOp" userLabel="Subtitle Label">
+                                                    <rect key="frame" x="0.0" y="27" width="240" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="FJQ-OH-WOp" secondAttribute="bottom" id="6Ov-Hq-GcT"/>
+                                                <constraint firstItem="FJQ-OH-WOp" firstAttribute="centerX" secondItem="CNk-Qd-YbP" secondAttribute="centerX" id="9YM-Rh-pdo"/>
+                                                <constraint firstItem="CNk-Qd-YbP" firstAttribute="width" secondItem="ZU1-wI-42u" secondAttribute="width" id="M5o-br-vu2"/>
+                                                <constraint firstItem="CNk-Qd-YbP" firstAttribute="top" secondItem="ZU1-wI-42u" secondAttribute="top" id="dPX-q1-JZk"/>
+                                                <constraint firstItem="FJQ-OH-WOp" firstAttribute="top" secondItem="CNk-Qd-YbP" secondAttribute="bottom" constant="5" id="ipP-W5-S8v"/>
+                                                <constraint firstItem="CNk-Qd-YbP" firstAttribute="centerX" secondItem="ZU1-wI-42u" secondAttribute="centerX" id="mMD-J2-EPg"/>
+                                                <constraint firstItem="FJQ-OH-WOp" firstAttribute="width" secondItem="CNk-Qd-YbP" secondAttribute="width" id="oMK-BO-rkL"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" red="0.0" green="0.79607843140000001" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="LX6-SS-PhP" firstAttribute="centerY" secondItem="A7R-W0-6c1" secondAttribute="centerY" id="2NZ-kJ-PoY"/>
+                                    <constraint firstItem="LX6-SS-PhP" firstAttribute="centerX" secondItem="A7R-W0-6c1" secondAttribute="centerX" id="Apo-5P-FgF"/>
+                                    <constraint firstItem="LX6-SS-PhP" firstAttribute="height" secondItem="A7R-W0-6c1" secondAttribute="height" id="GQ8-14-pIe"/>
+                                    <constraint firstItem="LX6-SS-PhP" firstAttribute="width" secondItem="A7R-W0-6c1" secondAttribute="width" id="JWl-AC-D8H"/>
+                                    <constraint firstItem="ZU1-wI-42u" firstAttribute="centerX" secondItem="A7R-W0-6c1" secondAttribute="centerX" id="Wpl-EA-mMv"/>
+                                    <constraint firstItem="ZU1-wI-42u" firstAttribute="width" secondItem="A7R-W0-6c1" secondAttribute="width" multiplier="0.75" id="WqH-im-B6P"/>
+                                    <constraint firstItem="ZU1-wI-42u" firstAttribute="centerY" secondItem="A7R-W0-6c1" secondAttribute="centerY" id="giO-Td-BmI"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="imageView" destination="LX6-SS-PhP" id="Qs1-78-SLY"/>
+                                    <outlet property="subtitleLabel" destination="FJQ-OH-WOp" id="cdR-YN-y0h"/>
+                                    <outlet property="titleLabel" destination="CNk-Qd-YbP" id="Lp6-rR-kJf"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="R2m-NF-yiD" id="R5W-4T-Ly3"/>
+                            <outlet property="delegate" destination="R2m-NF-yiD" id="LSQ-Ed-JNl"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="tXc-Wa-VEs"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A9d-Md-zDZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="308" y="409"/>
+        </scene>
+    </scenes>
 </document>
