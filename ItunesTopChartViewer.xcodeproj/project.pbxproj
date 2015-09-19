@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		310FB3941BAD1E7F001884A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 310FB3931BAD1E7F001884A9 /* main.m */; };
+		310FB3971BAD1E7F001884A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 310FB3961BAD1E7F001884A9 /* AppDelegate.m */; };
+		310FB39A1BAD1E7F001884A9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 310FB3991BAD1E7F001884A9 /* ViewController.m */; };
+		310FB39D1BAD1E7F001884A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 310FB39B1BAD1E7F001884A9 /* Main.storyboard */; };
+		310FB39F1BAD1E7F001884A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 310FB39E1BAD1E7F001884A9 /* Assets.xcassets */; };
+		310FB3A21BAD1E7F001884A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 310FB3A01BAD1E7F001884A9 /* LaunchScreen.storyboard */; };
+		310FB3AD1BAD1E81001884A9 /* ItunesTopChartViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 310FB3AC1BAD1E81001884A9 /* ItunesTopChartViewerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		310FB3A91BAD1E80001884A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 310FB3871BAD1E7F001884A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 310FB38E1BAD1E7F001884A9;
+			remoteInfo = ItunesTopChartViewer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		310FB38F1BAD1E7F001884A9 /* ItunesTopChartViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ItunesTopChartViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		310FB3931BAD1E7F001884A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		310FB3951BAD1E7F001884A9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		310FB3961BAD1E7F001884A9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		310FB3981BAD1E7F001884A9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		310FB3991BAD1E7F001884A9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		310FB39C1BAD1E7F001884A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		310FB39E1BAD1E7F001884A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		310FB3A11BAD1E7F001884A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		310FB3A31BAD1E7F001884A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		310FB3A81BAD1E80001884A9 /* ItunesTopChartViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ItunesTopChartViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		310FB3AC1BAD1E81001884A9 /* ItunesTopChartViewerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItunesTopChartViewerTests.m; sourceTree = "<group>"; };
+		310FB3AE1BAD1E81001884A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		310FB38C1BAD1E7F001884A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		310FB3A51BAD1E80001884A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		310FB3861BAD1E7F001884A9 = {
+			isa = PBXGroup;
+			children = (
+				310FB3911BAD1E7F001884A9 /* ItunesTopChartViewer */,
+				310FB3AB1BAD1E80001884A9 /* ItunesTopChartViewerTests */,
+				310FB3901BAD1E7F001884A9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		310FB3901BAD1E7F001884A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				310FB38F1BAD1E7F001884A9 /* ItunesTopChartViewer.app */,
+				310FB3A81BAD1E80001884A9 /* ItunesTopChartViewerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		310FB3911BAD1E7F001884A9 /* ItunesTopChartViewer */ = {
+			isa = PBXGroup;
+			children = (
+				310FB3951BAD1E7F001884A9 /* AppDelegate.h */,
+				310FB3961BAD1E7F001884A9 /* AppDelegate.m */,
+				310FB3981BAD1E7F001884A9 /* ViewController.h */,
+				310FB3991BAD1E7F001884A9 /* ViewController.m */,
+				310FB39B1BAD1E7F001884A9 /* Main.storyboard */,
+				310FB39E1BAD1E7F001884A9 /* Assets.xcassets */,
+				310FB3A01BAD1E7F001884A9 /* LaunchScreen.storyboard */,
+				310FB3A31BAD1E7F001884A9 /* Info.plist */,
+				310FB3921BAD1E7F001884A9 /* Supporting Files */,
+			);
+			path = ItunesTopChartViewer;
+			sourceTree = "<group>";
+		};
+		310FB3921BAD1E7F001884A9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				310FB3931BAD1E7F001884A9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		310FB3AB1BAD1E80001884A9 /* ItunesTopChartViewerTests */ = {
+			isa = PBXGroup;
+			children = (
+				310FB3AC1BAD1E81001884A9 /* ItunesTopChartViewerTests.m */,
+				310FB3AE1BAD1E81001884A9 /* Info.plist */,
+			);
+			path = ItunesTopChartViewerTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		310FB38E1BAD1E7F001884A9 /* ItunesTopChartViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 310FB3B11BAD1E81001884A9 /* Build configuration list for PBXNativeTarget "ItunesTopChartViewer" */;
+			buildPhases = (
+				310FB38B1BAD1E7F001884A9 /* Sources */,
+				310FB38C1BAD1E7F001884A9 /* Frameworks */,
+				310FB38D1BAD1E7F001884A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ItunesTopChartViewer;
+			productName = ItunesTopChartViewer;
+			productReference = 310FB38F1BAD1E7F001884A9 /* ItunesTopChartViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		310FB3A71BAD1E80001884A9 /* ItunesTopChartViewerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 310FB3B41BAD1E81001884A9 /* Build configuration list for PBXNativeTarget "ItunesTopChartViewerTests" */;
+			buildPhases = (
+				310FB3A41BAD1E80001884A9 /* Sources */,
+				310FB3A51BAD1E80001884A9 /* Frameworks */,
+				310FB3A61BAD1E80001884A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				310FB3AA1BAD1E80001884A9 /* PBXTargetDependency */,
+			);
+			name = ItunesTopChartViewerTests;
+			productName = ItunesTopChartViewerTests;
+			productReference = 310FB3A81BAD1E80001884A9 /* ItunesTopChartViewerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		310FB3871BAD1E7F001884A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = YLS;
+				TargetAttributes = {
+					310FB38E1BAD1E7F001884A9 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					310FB3A71BAD1E80001884A9 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 310FB38E1BAD1E7F001884A9;
+					};
+				};
+			};
+			buildConfigurationList = 310FB38A1BAD1E7F001884A9 /* Build configuration list for PBXProject "ItunesTopChartViewer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 310FB3861BAD1E7F001884A9;
+			productRefGroup = 310FB3901BAD1E7F001884A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				310FB38E1BAD1E7F001884A9 /* ItunesTopChartViewer */,
+				310FB3A71BAD1E80001884A9 /* ItunesTopChartViewerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		310FB38D1BAD1E7F001884A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				310FB3A21BAD1E7F001884A9 /* LaunchScreen.storyboard in Resources */,
+				310FB39F1BAD1E7F001884A9 /* Assets.xcassets in Resources */,
+				310FB39D1BAD1E7F001884A9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		310FB3A61BAD1E80001884A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		310FB38B1BAD1E7F001884A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				310FB39A1BAD1E7F001884A9 /* ViewController.m in Sources */,
+				310FB3971BAD1E7F001884A9 /* AppDelegate.m in Sources */,
+				310FB3941BAD1E7F001884A9 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		310FB3A41BAD1E80001884A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				310FB3AD1BAD1E81001884A9 /* ItunesTopChartViewerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		310FB3AA1BAD1E80001884A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 310FB38E1BAD1E7F001884A9 /* ItunesTopChartViewer */;
+			targetProxy = 310FB3A91BAD1E80001884A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		310FB39B1BAD1E7F001884A9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				310FB39C1BAD1E7F001884A9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		310FB3A01BAD1E7F001884A9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				310FB3A11BAD1E7F001884A9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		310FB3AF1BAD1E81001884A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		310FB3B01BAD1E81001884A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		310FB3B21BAD1E81001884A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ItunesTopChartViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YLS.ItunesTopChartViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		310FB3B31BAD1E81001884A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ItunesTopChartViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YLS.ItunesTopChartViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		310FB3B51BAD1E81001884A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ItunesTopChartViewerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YLS.ItunesTopChartViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ItunesTopChartViewer.app/ItunesTopChartViewer";
+			};
+			name = Debug;
+		};
+		310FB3B61BAD1E81001884A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ItunesTopChartViewerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YLS.ItunesTopChartViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ItunesTopChartViewer.app/ItunesTopChartViewer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		310FB38A1BAD1E7F001884A9 /* Build configuration list for PBXProject "ItunesTopChartViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				310FB3AF1BAD1E81001884A9 /* Debug */,
+				310FB3B01BAD1E81001884A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		310FB3B11BAD1E81001884A9 /* Build configuration list for PBXNativeTarget "ItunesTopChartViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				310FB3B21BAD1E81001884A9 /* Debug */,
+				310FB3B31BAD1E81001884A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		310FB3B41BAD1E81001884A9 /* Build configuration list for PBXNativeTarget "ItunesTopChartViewerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				310FB3B51BAD1E81001884A9 /* Debug */,
+				310FB3B61BAD1E81001884A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 310FB3871BAD1E7F001884A9 /* Project object */;
+}
