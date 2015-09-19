@@ -18,6 +18,7 @@ static DDLogLevel ddLogLevel = DDLogLevelWarning;
 #endif
 
 @interface TopChartFetcher () {
+    AFHTTPRequestOperationManager *_manager;
 }
 
 @end
@@ -28,22 +29,32 @@ NSString * const TopChartFetcherFetchFailureNotification = @"TopChartFetcherFetc
 NSString * const TopChartFetcherDidUpdateTopAlbumsChartNotification = @"TopChartFetcherDidUpdateTopAlbumsChartNotification";
 NSString * const TopChartFetcherFetchFailureError = @"TopChartFetcherFetchFailureError";
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        _manager = [AFHTTPRequestOperationManager manager];
+    }
+    return self;
+}
+
 - (void)fetchTopChart {
     [self fetchTopChartWithLimit:20];
 }
 
 - (void)fetchTopChartWithLimit:(NSInteger)limit {
     __weak TopChartFetcher *weakSelf = self;
-    [[AFHTTPRequestOperationManager manager]
-     GET:[self topChartFetingURIWithLimit:limit]
-     parameters:nil
-     success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [_manager GET:[self topChartFetingURIWithLimit:limit]
+       parameters:nil
+          success:
+     ^(AFHTTPRequestOperation *operation, id responseObject) {
          TopChartFetcher *strongSelf = weakSelf;
          if (strongSelf) {
              [strongSelf handleSuccessForFetchOperation:operation responseBody:responseObject];
          }
      }
-     failure:^(AFHTTPRequestOperation *operation, NSError * error) {
+          failure:
+     ^(AFHTTPRequestOperation *operation, NSError * error) {
          TopChartFetcher *strongSelf = weakSelf;
          if (strongSelf) {
              [strongSelf handleFailureForFetchOperation:operation error:error];

@@ -23,6 +23,7 @@
 		312BD6CB1BAD2C6B00AE5B46 /* TopChartItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 312BD6C81BAD2C6B00AE5B46 /* TopChartItemCell.m */; settings = {ASSET_TAGS = (); }; };
 		312BD6CC1BAD2C6B00AE5B46 /* TopChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 312BD6CA1BAD2C6B00AE5B46 /* TopChartViewController.m */; settings = {ASSET_TAGS = (); }; };
 		312BD6CF1BAD2C9500AE5B46 /* TopChartFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 312BD6CE1BAD2C9500AE5B46 /* TopChartFlowLayout.m */; settings = {ASSET_TAGS = (); }; };
+		31BC1FE71BADCB02000CB3CC /* AlbumCoverImageFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BC1FE61BADCB02000CB3CC /* AlbumCoverImageFetcher.m */; settings = {ASSET_TAGS = (); }; };
 		691CD43869A108A1683BE501 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4507BDC18AF5676BE9BB785 /* libPods.a */; };
 		CF53C87288413FB7833050C6 /* libPods-ItunesTopChartViewerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78EE2DF39017E5985ACA1D81 /* libPods-ItunesTopChartViewerTests.a */; };
 /* End PBXBuildFile section */
@@ -68,6 +69,8 @@
 		312BD6CA1BAD2C6B00AE5B46 /* TopChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopChartViewController.m; sourceTree = "<group>"; };
 		312BD6CD1BAD2C9500AE5B46 /* TopChartFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopChartFlowLayout.h; sourceTree = "<group>"; };
 		312BD6CE1BAD2C9500AE5B46 /* TopChartFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopChartFlowLayout.m; sourceTree = "<group>"; };
+		31BC1FE51BADCB02000CB3CC /* AlbumCoverImageFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumCoverImageFetcher.h; sourceTree = "<group>"; };
+		31BC1FE61BADCB02000CB3CC /* AlbumCoverImageFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumCoverImageFetcher.m; sourceTree = "<group>"; };
 		56D333F6A9E1317F06A8379A /* Pods-ItunesTopChartViewerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ItunesTopChartViewerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ItunesTopChartViewerTests/Pods-ItunesTopChartViewerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		58EC9D466AE7195E02E6E49D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		78EE2DF39017E5985ACA1D81 /* libPods-ItunesTopChartViewerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ItunesTopChartViewerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -164,6 +167,8 @@
 			children = (
 				3117FB821BAD354A00FF073C /* TopChartFetcher.h */,
 				3117FB831BAD354A00FF073C /* TopChartFetcher.m */,
+				31BC1FE51BADCB02000CB3CC /* AlbumCoverImageFetcher.h */,
+				31BC1FE61BADCB02000CB3CC /* AlbumCoverImageFetcher.m */,
 				3117FB961BAD535000FF073C /* TopChartAlbumsBuilder.h */,
 				3117FB971BAD535000FF073C /* TopChartAlbumsBuilder.m */,
 				3117FB851BAD356000FF073C /* AlbumMeta.h */,
@@ -179,10 +184,10 @@
 		312BD6C61BAD2C6B00AE5B46 /* UserInterfaces */ = {
 			isa = PBXGroup;
 			children = (
-				312BD6C71BAD2C6B00AE5B46 /* TopChartItemCell.h */,
-				312BD6C81BAD2C6B00AE5B46 /* TopChartItemCell.m */,
 				312BD6C91BAD2C6B00AE5B46 /* TopChartViewController.h */,
 				312BD6CA1BAD2C6B00AE5B46 /* TopChartViewController.m */,
+				312BD6C71BAD2C6B00AE5B46 /* TopChartItemCell.h */,
+				312BD6C81BAD2C6B00AE5B46 /* TopChartItemCell.m */,
 				312BD6CD1BAD2C9500AE5B46 /* TopChartFlowLayout.h */,
 				312BD6CE1BAD2C9500AE5B46 /* TopChartFlowLayout.m */,
 			);
@@ -374,6 +379,7 @@
 				312BD6CB1BAD2C6B00AE5B46 /* TopChartItemCell.m in Sources */,
 				3117FB871BAD356000FF073C /* AlbumMeta.m in Sources */,
 				3117FB981BAD535000FF073C /* TopChartAlbumsBuilder.m in Sources */,
+				31BC1FE71BADCB02000CB3CC /* AlbumCoverImageFetcher.m in Sources */,
 				310FB3941BAD1E7F001884A9 /* main.m in Sources */,
 				3117FB841BAD354A00FF073C /* TopChartFetcher.m in Sources */,
 				312BD6CC1BAD2C6B00AE5B46 /* TopChartViewController.m in Sources */,
