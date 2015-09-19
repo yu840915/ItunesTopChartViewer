@@ -11,14 +11,20 @@
 #import "TopChartItemCell.h"
 #import "TopChartFetcher.h"
 #import "AlbumMeta.h"
-#import <AFNetworking/AFNetworking.h>
-#import "ImageMeta.h"
+#import "AlbumCoverImageFetcher.h"
+#import <CocoaLumberjack/CocoaLumberjack.h>
+
+#if DEBUG
+static DDLogLevel ddLogLevel = DDLogLevelVerbose;
+#else
+static DDLogLevel ddLogLevel = DDLogLevelError;
+#endif
 
 @interface TopChartViewController () {
     TopChartFetcher *_topChartFetcher;
     NSArray *_albums;
     NSDictionary *_albumIDIndexPathMap;
-    NSURLSession *_session;
+    AlbumCoverImageFetcher *_imageFetcher;
 }
 @property (nonatomic, readonly) UICollectionViewFlowLayout *myFlowLayout;
 @end
@@ -30,12 +36,15 @@ static NSString * const reuseIdentifier = @"TopChartItemCellID";
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
     if (self) {
-        _topChartFetcher = [[TopChartFetcher alloc] init];
-        [self registerFetcherNotifications];
+        [self setUpTopChartFetcher];
         [_topChartFetcher fetchTopChart];
-        _session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
     }
     return self;
+}
+
+- (void)setUpTopChartFetcher {
+    _topChartFetcher = [[TopChartFetcher alloc] init];
+    [self registerFetcherNotifications];
 }
 
 - (void)registerFetcherNotifications {
@@ -73,6 +82,7 @@ static NSString * const reuseIdentifier = @"TopChartItemCellID";
 - (void)handleFetcherFailureNotification:(NSNotification *)notification {
     [[NSOperationQueue mainQueue] addOperationWithBlock:^{
         [self showAlertForError:notification.userInfo[TopChartFetcherFetchFailureError]];
+        DDLogError(notification.userInfo[TopChartFetcherFetchFailureError]);
     }];
 }
 
@@ -88,7 +98,26 @@ static NSString * const reuseIdentifier = @"TopChartItemCellID";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.collectionView.collectionViewLayout = [[TopChartFlowLayout alloc] init];
+    [self setUpLayoutAndImageFetcher];
+}
+
+- (void)setUpLayoutAndImageFetcher {
+    TopChartFlowLayout *layout = [[TopChartFlowLayout alloc] init];
+    self.collectionView.collectionViewLayout = layout;
+    [self setUpImageFetcherIfNecessaryWithLayout:layout];
+}
+
+- (void)setUpImageFetcherIfNecessaryWithLayout:(TopChartFlowLayout *)layout {
+    if (!_imageFetcher) {
+        NSInteger size = [self computeImagePixelSizeThatFitFromLayout:layout];
+        _imageFetcher = [[AlbumCoverImageFetcher alloc] initWithPreferedImageSize:size];
+    }
+}
+
+- (NSInteger)computeImagePixelSizeThatFitFromLayout:(TopChartFlowLayout *)layout {
+    CGFloat scale = MIN([UIScreen mainScreen].scale, 2.0);
+    CGFloat sizeInPoint = layout.itemSize.width;
+    return (NSInteger)(sizeInPoint * scale);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -117,15 +146,23 @@ static NSString * const reuseIdentifier = @"TopChartItemCellID";
 
 - (void)loadCoverImageForAlbumMeta:(AlbumMeta *)meta {
     __weak TopChartViewController *weakSelf = self;
-    NSURLSessionTask *task = [_session dataTaskWithURL:[meta.coverImageMeta imageURLWithLength:320]
-                                     completionHandler:
-                              ^(NSData *data, NSURLResponse *response, NSError * error) {
-                                  TopChartViewController *strongSelf = weakSelf;
-                                  if (strongSelf) {
-                                      [strongSelf setImageData:data forAlbumMeta:meta];
-                                  }
-                              }];
-    [task resume];
+    [_imageFetcher fetchCoverImageForAlbumMeta:meta completion:
+    ^(NSData *imageData, NSError *error) {
+        TopChartViewController *strongSelf = weakSelf;
+        if (strongSelf) {
+            [strongSelf handleDidFetchImageData:imageData forAlbumMeta:meta error:error];
+        }
+    }];
+}
+
+- (void)handleDidFetchImageData:(NSData *)data
+                   forAlbumMeta:(AlbumMeta *)meta
+                          error:(NSError *)error {
+    if (data) {
+        [self setImageData:data forAlbumMeta:meta];
+    } else {
+        DDLogWarn(@"%@", error);
+    }
 }
 
 - (void)setImageData:(NSData *)data
