@@ -55,13 +55,11 @@
 }
 
 - (void)testIllegalUsageOfFactoryMethod {
-    XCTAssertThrows([AlbumMeta albumMetaWithJSONObject:nil coverImageMeta:nil]);
-    XCTAssertThrows([AlbumMeta albumMetaWithJSONObject:nil coverImageMeta:_imageMetaMock]);
-    XCTAssertThrows([AlbumMeta albumMetaWithJSONObject:_jsonAlbumObject coverImageMeta:nil]);
+    XCTAssertThrows([AlbumMeta albumMetaWithJSONObject:nil]);
 }
 
 - (void)testCreateFromJSONFactoryMethod {
-    AlbumMeta *meta = [AlbumMeta albumMetaWithJSONObject:_jsonAlbumObject coverImageMeta:_imageMetaMock];
+    AlbumMeta *meta = [AlbumMeta albumMetaWithJSONObject:_jsonAlbumObject];
     
     XCTAssertEqualObjects(meta.title, @"Chopin: Nocturnes");
     XCTAssertEqualObjects(meta.artists, @"Arthur Rubinstein");

@@ -11,6 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 @interface NSDictionary (NullValueFilter)
 
+- (NSArray *__nullable)arrayForKey:(NSString *)key;
 - (NSDictionary *__nullable)dictionaryForKey:(NSString *)key;
 - (NSString *__nullable)stringForKey:(NSString *)key;
 

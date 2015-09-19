@@ -8,6 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
 @interface ImageMeta : NSObject
 
++ (instancetype)imageMetaWithJSONObject:(NSDictionary *)obj;
+
+- (instancetype)initWithExampleImageURI:(NSString *)uri;
+- (instancetype)initWithExampleImageURL:(NSURL *)url;
+
+@property (nonatomic, readonly) NSString *imagePath;
+- (NSURL *)imageURLWithLength:(NSInteger)length;
+
 @end
+NS_ASSUME_NONNULL_END

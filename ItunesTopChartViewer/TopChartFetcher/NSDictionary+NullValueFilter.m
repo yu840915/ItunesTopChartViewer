@@ -10,6 +10,10 @@
 
 @implementation NSDictionary (NullValueFilter)
 
+- (NSArray *)arrayForKey:(NSString *)key {
+    return [self valueOfClassWithName:NSStringFromClass([NSArray class]) forKey:key];
+}
+
 - (NSDictionary *)dictionaryForKey:(NSString *)key {
     return [self valueOfClassWithName:NSStringFromClass([NSDictionary class]) forKey:key];
 }

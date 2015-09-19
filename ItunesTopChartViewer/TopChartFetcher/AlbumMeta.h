@@ -13,7 +13,7 @@
 NS_ASSUME_NONNULL_BEGIN
 @interface AlbumMeta : NSObject
 
-+ (instancetype)albumMetaWithJSONObject:(NSDictionary *)obj coverImageMeta:(ImageMeta *)imageMeta;
++ (instancetype)albumMetaWithJSONObject:(NSDictionary *)obj;
 
 - (instancetype)initWithTitle:(NSString *)title artists:(NSString *__nullable)artists coverImageMeta:(ImageMeta *)imageMeta;
 
