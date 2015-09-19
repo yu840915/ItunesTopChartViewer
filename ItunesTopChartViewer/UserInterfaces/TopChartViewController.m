@@ -7,9 +7,10 @@
 //
 
 #import "TopChartViewController.h"
+#import "TopChartFlowLayout.h"
 
 @interface TopChartViewController ()
-
+@property (nonatomic, readonly) UICollectionViewFlowLayout *myFlowLayout;
 @end
 
 @implementation TopChartViewController
@@ -18,7 +19,7 @@ static NSString * const reuseIdentifier = @"TopChartItemCellID";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.collectionView.collectionViewLayout = [[TopChartFlowLayout alloc] init];
     // Do any additional setup after loading the view.
 }
 

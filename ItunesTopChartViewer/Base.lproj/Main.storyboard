@@ -80,6 +80,7 @@
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <color key="backgroundColor" red="0.0" green="0.79607843140000001" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="LX6-SS-PhP" firstAttribute="centerY" secondItem="A7R-W0-6c1" secondAttribute="centerY" id="2NZ-kJ-PoY"/>
                                     <constraint firstItem="LX6-SS-PhP" firstAttribute="centerX" secondItem="A7R-W0-6c1" secondAttribute="centerX" id="Apo-5P-FgF"/>
@@ -89,6 +90,11 @@
                                     <constraint firstItem="ZU1-wI-42u" firstAttribute="width" secondItem="A7R-W0-6c1" secondAttribute="width" multiplier="0.75" id="WqH-im-B6P"/>
                                     <constraint firstItem="ZU1-wI-42u" firstAttribute="centerY" secondItem="A7R-W0-6c1" secondAttribute="centerY" id="giO-Td-BmI"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="imageView" destination="LX6-SS-PhP" id="Qs1-78-SLY"/>
+                                    <outlet property="subtitleLabel" destination="FJQ-OH-WOp" id="cdR-YN-y0h"/>
+                                    <outlet property="titleLabel" destination="CNk-Qd-YbP" id="Lp6-rR-kJf"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
