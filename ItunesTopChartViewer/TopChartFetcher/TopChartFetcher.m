@@ -57,9 +57,15 @@ NSString * const TopChartFetcherFetchFailureError = @"TopChartFetcherFetchFailur
 
 - (void)handleSuccessForFetchOperation:(AFHTTPRequestOperation *)op
                           responseBody:(id)obj {
+    [self buildAndUpdateTopChartAlbumsFromResponseBody:obj];
+    [[NSNotificationCenter defaultCenter] postNotificationName:TopChartFetcherDidUpdateTopAlbumsChartNotification
+                                                        object:self];
+}
+
+- (void)buildAndUpdateTopChartAlbumsFromResponseBody:(id)obj {
     TopChartAlbumsBuilder *buildr = [[TopChartAlbumsBuilder alloc] initWithJSONObjectFromItunes:obj];
     _topChartAlbums = buildr.topChartAlbums;
-    [[NSNotificationCenter defaultCenter] postNotificationName:TopChartFetcherDidUpdateTopAlbumsChartNotification object:self];
+    DDLogInfo(@"%@", _topChartAlbums);
 }
 
 - (void)handleFailureForFetchOperation:(AFHTTPRequestOperation *)op
