@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <CocoaLumberjack/CocoaLumberjack.h>
 
 @interface AppDelegate ()
 
@@ -16,8 +17,13 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [self setUpLoggers];
     return YES;
+}
+
+- (void)setUpLoggers {
+    [DDLog addLogger:[DDASLLogger sharedInstance]];
+    [DDLog addLogger:[DDTTYLogger sharedInstance]];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
