@@ -28,12 +28,17 @@
         _title = [title copy];
         _coverImageMeta = imageMeta;
         [self setUpArtistsWithDefaultOrInputArtists:artists];
+        [self setUpIdentifier];
     }
     return self;
 }
 
 - (void)setUpArtistsWithDefaultOrInputArtists:(NSString *)artists {
     _artists = artists ? [artists copy] : @"Unknown artists";
+}
+
+- (void)setUpIdentifier {
+    _identifier = [NSString stringWithFormat:@"%@%@%@", _title, _coverImageMeta.imagePath, _artists];
 }
 
 @end

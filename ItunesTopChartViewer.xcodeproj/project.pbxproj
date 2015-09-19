@@ -18,6 +18,8 @@
 		3117FB8C1BAD365E00FF073C /* AlbumMetaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3117FB8B1BAD365E00FF073C /* AlbumMetaTests.m */; settings = {ASSET_TAGS = (); }; };
 		3117FB931BAD3F2900FF073C /* NSDictionary+NullValueFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3117FB921BAD3F2900FF073C /* NSDictionary+NullValueFilter.m */; settings = {ASSET_TAGS = (); }; };
 		3117FB951BAD444700FF073C /* ImageMetaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3117FB941BAD444700FF073C /* ImageMetaTests.m */; settings = {ASSET_TAGS = (); }; };
+		3117FB981BAD535000FF073C /* TopChartAlbumsBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3117FB971BAD535000FF073C /* TopChartAlbumsBuilder.m */; settings = {ASSET_TAGS = (); }; };
+		3117FB9A1BADAC0A00FF073C /* TopChartAlbumBuilderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3117FB991BADAC0A00FF073C /* TopChartAlbumBuilderTests.m */; settings = {ASSET_TAGS = (); }; };
 		312BD6CB1BAD2C6B00AE5B46 /* TopChartItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 312BD6C81BAD2C6B00AE5B46 /* TopChartItemCell.m */; settings = {ASSET_TAGS = (); }; };
 		312BD6CC1BAD2C6B00AE5B46 /* TopChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 312BD6CA1BAD2C6B00AE5B46 /* TopChartViewController.m */; settings = {ASSET_TAGS = (); }; };
 		312BD6CF1BAD2C9500AE5B46 /* TopChartFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 312BD6CE1BAD2C9500AE5B46 /* TopChartFlowLayout.m */; settings = {ASSET_TAGS = (); }; };
@@ -57,6 +59,9 @@
 		3117FB911BAD3F2900FF073C /* NSDictionary+NullValueFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+NullValueFilter.h"; sourceTree = "<group>"; };
 		3117FB921BAD3F2900FF073C /* NSDictionary+NullValueFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+NullValueFilter.m"; sourceTree = "<group>"; };
 		3117FB941BAD444700FF073C /* ImageMetaTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageMetaTests.m; sourceTree = "<group>"; };
+		3117FB961BAD535000FF073C /* TopChartAlbumsBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopChartAlbumsBuilder.h; sourceTree = "<group>"; };
+		3117FB971BAD535000FF073C /* TopChartAlbumsBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopChartAlbumsBuilder.m; sourceTree = "<group>"; };
+		3117FB991BADAC0A00FF073C /* TopChartAlbumBuilderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopChartAlbumBuilderTests.m; sourceTree = "<group>"; };
 		312BD6C71BAD2C6B00AE5B46 /* TopChartItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopChartItemCell.h; sourceTree = "<group>"; };
 		312BD6C81BAD2C6B00AE5B46 /* TopChartItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopChartItemCell.m; sourceTree = "<group>"; };
 		312BD6C91BAD2C6B00AE5B46 /* TopChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopChartViewController.h; sourceTree = "<group>"; };
@@ -148,6 +153,7 @@
 			children = (
 				3117FB8B1BAD365E00FF073C /* AlbumMetaTests.m */,
 				3117FB941BAD444700FF073C /* ImageMetaTests.m */,
+				3117FB991BADAC0A00FF073C /* TopChartAlbumBuilderTests.m */,
 				310FB3AE1BAD1E81001884A9 /* Info.plist */,
 			);
 			path = ItunesTopChartViewerTests;
@@ -158,6 +164,8 @@
 			children = (
 				3117FB821BAD354A00FF073C /* TopChartFetcher.h */,
 				3117FB831BAD354A00FF073C /* TopChartFetcher.m */,
+				3117FB961BAD535000FF073C /* TopChartAlbumsBuilder.h */,
+				3117FB971BAD535000FF073C /* TopChartAlbumsBuilder.m */,
 				3117FB851BAD356000FF073C /* AlbumMeta.h */,
 				3117FB861BAD356000FF073C /* AlbumMeta.m */,
 				3117FB881BAD357100FF073C /* ImageMeta.h */,
@@ -365,6 +373,7 @@
 				310FB3971BAD1E7F001884A9 /* AppDelegate.m in Sources */,
 				312BD6CB1BAD2C6B00AE5B46 /* TopChartItemCell.m in Sources */,
 				3117FB871BAD356000FF073C /* AlbumMeta.m in Sources */,
+				3117FB981BAD535000FF073C /* TopChartAlbumsBuilder.m in Sources */,
 				310FB3941BAD1E7F001884A9 /* main.m in Sources */,
 				3117FB841BAD354A00FF073C /* TopChartFetcher.m in Sources */,
 				312BD6CC1BAD2C6B00AE5B46 /* TopChartViewController.m in Sources */,
@@ -375,6 +384,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3117FB9A1BADAC0A00FF073C /* TopChartAlbumBuilderTests.m in Sources */,
 				3117FB951BAD444700FF073C /* ImageMetaTests.m in Sources */,
 				3117FB8C1BAD365E00FF073C /* AlbumMetaTests.m in Sources */,
 			);

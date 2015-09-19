@@ -8,6 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
+@class AlbumMeta;
 @interface TopChartFetcher : NSObject
 
+- (void)fetchTopChart;
+
+@property (nonatomic, readonly) NSArray *topChartAlbums;
+
 @end
+
+extern NSString * const TopChartFetcherFetchFailureNotification;
+extern NSString * const TopChartFetcherDidUpdateTopAlbumsChartNotification;
+extern NSString * const TopChartFetcherFetchFailureError;

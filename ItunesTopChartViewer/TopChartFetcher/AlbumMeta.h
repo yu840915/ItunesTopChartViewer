@@ -20,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly) ImageMeta *coverImageMeta;
 @property (nonatomic, readonly) NSString *title;
 @property (nonatomic, readonly) NSString *artists;
+@property (nonatomic, readonly) NSString *identifier;
 
 @end
 NS_ASSUME_NONNULL_END
