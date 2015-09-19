@@ -12,7 +12,20 @@
 		310FB39D1BAD1E7F001884A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 310FB39B1BAD1E7F001884A9 /* Main.storyboard */; };
 		310FB39F1BAD1E7F001884A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 310FB39E1BAD1E7F001884A9 /* Assets.xcassets */; };
 		310FB3A21BAD1E7F001884A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 310FB3A01BAD1E7F001884A9 /* LaunchScreen.storyboard */; };
-		310FB3AD1BAD1E81001884A9 /* ItunesTopChartViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 310FB3AC1BAD1E81001884A9 /* ItunesTopChartViewerTests.m */; };
+		3117FB841BAD354A00FF073C /* TopChartFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 3117FB831BAD354A00FF073C /* TopChartFetcher.m */; settings = {ASSET_TAGS = (); }; };
+		3117FB871BAD356000FF073C /* AlbumMeta.m in Sources */ = {isa = PBXBuildFile; fileRef = 3117FB861BAD356000FF073C /* AlbumMeta.m */; settings = {ASSET_TAGS = (); }; };
+		3117FB8A1BAD357100FF073C /* ImageMeta.m in Sources */ = {isa = PBXBuildFile; fileRef = 3117FB891BAD357100FF073C /* ImageMeta.m */; settings = {ASSET_TAGS = (); }; };
+		3117FB8C1BAD365E00FF073C /* AlbumMetaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3117FB8B1BAD365E00FF073C /* AlbumMetaTests.m */; settings = {ASSET_TAGS = (); }; };
+		3117FB931BAD3F2900FF073C /* NSDictionary+NullValueFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3117FB921BAD3F2900FF073C /* NSDictionary+NullValueFilter.m */; settings = {ASSET_TAGS = (); }; };
+		3117FB951BAD444700FF073C /* ImageMetaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3117FB941BAD444700FF073C /* ImageMetaTests.m */; settings = {ASSET_TAGS = (); }; };
+		3117FB981BAD535000FF073C /* TopChartAlbumsBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3117FB971BAD535000FF073C /* TopChartAlbumsBuilder.m */; settings = {ASSET_TAGS = (); }; };
+		3117FB9A1BADAC0A00FF073C /* TopChartAlbumBuilderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3117FB991BADAC0A00FF073C /* TopChartAlbumBuilderTests.m */; settings = {ASSET_TAGS = (); }; };
+		312BD6CB1BAD2C6B00AE5B46 /* TopChartItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 312BD6C81BAD2C6B00AE5B46 /* TopChartItemCell.m */; settings = {ASSET_TAGS = (); }; };
+		312BD6CC1BAD2C6B00AE5B46 /* TopChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 312BD6CA1BAD2C6B00AE5B46 /* TopChartViewController.m */; settings = {ASSET_TAGS = (); }; };
+		312BD6CF1BAD2C9500AE5B46 /* TopChartFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 312BD6CE1BAD2C9500AE5B46 /* TopChartFlowLayout.m */; settings = {ASSET_TAGS = (); }; };
+		31BC1FE71BADCB02000CB3CC /* AlbumCoverImageFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BC1FE61BADCB02000CB3CC /* AlbumCoverImageFetcher.m */; settings = {ASSET_TAGS = (); }; };
+		691CD43869A108A1683BE501 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4507BDC18AF5676BE9BB785 /* libPods.a */; };
+		CF53C87288413FB7833050C6 /* libPods-ItunesTopChartViewerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78EE2DF39017E5985ACA1D81 /* libPods-ItunesTopChartViewerTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0571D3B4180F576091DD0DB8 /* Pods-ItunesTopChartViewerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ItunesTopChartViewerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ItunesTopChartViewerTests/Pods-ItunesTopChartViewerTests.release.xcconfig"; sourceTree = "<group>"; };
 		310FB38F1BAD1E7F001884A9 /* ItunesTopChartViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ItunesTopChartViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		310FB3931BAD1E7F001884A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		310FB3951BAD1E7F001884A9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -35,8 +49,33 @@
 		310FB3A11BAD1E7F001884A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		310FB3A31BAD1E7F001884A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		310FB3A81BAD1E80001884A9 /* ItunesTopChartViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ItunesTopChartViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		310FB3AC1BAD1E81001884A9 /* ItunesTopChartViewerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItunesTopChartViewerTests.m; sourceTree = "<group>"; };
 		310FB3AE1BAD1E81001884A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3117FB821BAD354A00FF073C /* TopChartFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopChartFetcher.h; sourceTree = "<group>"; };
+		3117FB831BAD354A00FF073C /* TopChartFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopChartFetcher.m; sourceTree = "<group>"; };
+		3117FB851BAD356000FF073C /* AlbumMeta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumMeta.h; sourceTree = "<group>"; };
+		3117FB861BAD356000FF073C /* AlbumMeta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumMeta.m; sourceTree = "<group>"; };
+		3117FB881BAD357100FF073C /* ImageMeta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageMeta.h; sourceTree = "<group>"; };
+		3117FB891BAD357100FF073C /* ImageMeta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageMeta.m; sourceTree = "<group>"; };
+		3117FB8B1BAD365E00FF073C /* AlbumMetaTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumMetaTests.m; sourceTree = "<group>"; };
+		3117FB911BAD3F2900FF073C /* NSDictionary+NullValueFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+NullValueFilter.h"; sourceTree = "<group>"; };
+		3117FB921BAD3F2900FF073C /* NSDictionary+NullValueFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+NullValueFilter.m"; sourceTree = "<group>"; };
+		3117FB941BAD444700FF073C /* ImageMetaTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageMetaTests.m; sourceTree = "<group>"; };
+		3117FB961BAD535000FF073C /* TopChartAlbumsBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopChartAlbumsBuilder.h; sourceTree = "<group>"; };
+		3117FB971BAD535000FF073C /* TopChartAlbumsBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopChartAlbumsBuilder.m; sourceTree = "<group>"; };
+		3117FB991BADAC0A00FF073C /* TopChartAlbumBuilderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopChartAlbumBuilderTests.m; sourceTree = "<group>"; };
+		312BD6C71BAD2C6B00AE5B46 /* TopChartItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopChartItemCell.h; sourceTree = "<group>"; };
+		312BD6C81BAD2C6B00AE5B46 /* TopChartItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopChartItemCell.m; sourceTree = "<group>"; };
+		312BD6C91BAD2C6B00AE5B46 /* TopChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopChartViewController.h; sourceTree = "<group>"; };
+		312BD6CA1BAD2C6B00AE5B46 /* TopChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopChartViewController.m; sourceTree = "<group>"; };
+		312BD6CD1BAD2C9500AE5B46 /* TopChartFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopChartFlowLayout.h; sourceTree = "<group>"; };
+		312BD6CE1BAD2C9500AE5B46 /* TopChartFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopChartFlowLayout.m; sourceTree = "<group>"; };
+		31BC1FE51BADCB02000CB3CC /* AlbumCoverImageFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumCoverImageFetcher.h; sourceTree = "<group>"; };
+		31BC1FE61BADCB02000CB3CC /* AlbumCoverImageFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumCoverImageFetcher.m; sourceTree = "<group>"; };
+		56D333F6A9E1317F06A8379A /* Pods-ItunesTopChartViewerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ItunesTopChartViewerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ItunesTopChartViewerTests/Pods-ItunesTopChartViewerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		58EC9D466AE7195E02E6E49D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		78EE2DF39017E5985ACA1D81 /* libPods-ItunesTopChartViewerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ItunesTopChartViewerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D088222401BEF500C24307FF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		D4507BDC18AF5676BE9BB785 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				691CD43869A108A1683BE501 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,18 +91,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF53C87288413FB7833050C6 /* libPods-ItunesTopChartViewerTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		109EC07B78558A7722849CEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4507BDC18AF5676BE9BB785 /* libPods.a */,
+				78EE2DF39017E5985ACA1D81 /* libPods-ItunesTopChartViewerTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		310FB3861BAD1E7F001884A9 = {
 			isa = PBXGroup;
 			children = (
 				310FB3911BAD1E7F001884A9 /* ItunesTopChartViewer */,
 				310FB3AB1BAD1E80001884A9 /* ItunesTopChartViewerTests */,
 				310FB3901BAD1E7F001884A9 /* Products */,
+				7E59087F300E0A80F1222EA8 /* Pods */,
+				109EC07B78558A7722849CEE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +135,8 @@
 				310FB39B1BAD1E7F001884A9 /* Main.storyboard */,
 				310FB39E1BAD1E7F001884A9 /* Assets.xcassets */,
 				310FB3A01BAD1E7F001884A9 /* LaunchScreen.storyboard */,
+				3117FB811BAD352800FF073C /* TopChartFetcher */,
+				312BD6C61BAD2C6B00AE5B46 /* UserInterfaces */,
 				310FB3A31BAD1E7F001884A9 /* Info.plist */,
 				310FB3921BAD1E7F001884A9 /* Supporting Files */,
 			);
@@ -100,10 +154,55 @@
 		310FB3AB1BAD1E80001884A9 /* ItunesTopChartViewerTests */ = {
 			isa = PBXGroup;
 			children = (
-				310FB3AC1BAD1E81001884A9 /* ItunesTopChartViewerTests.m */,
+				3117FB8B1BAD365E00FF073C /* AlbumMetaTests.m */,
+				3117FB941BAD444700FF073C /* ImageMetaTests.m */,
+				3117FB991BADAC0A00FF073C /* TopChartAlbumBuilderTests.m */,
 				310FB3AE1BAD1E81001884A9 /* Info.plist */,
 			);
 			path = ItunesTopChartViewerTests;
+			sourceTree = "<group>";
+		};
+		3117FB811BAD352800FF073C /* TopChartFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				3117FB821BAD354A00FF073C /* TopChartFetcher.h */,
+				3117FB831BAD354A00FF073C /* TopChartFetcher.m */,
+				31BC1FE51BADCB02000CB3CC /* AlbumCoverImageFetcher.h */,
+				31BC1FE61BADCB02000CB3CC /* AlbumCoverImageFetcher.m */,
+				3117FB961BAD535000FF073C /* TopChartAlbumsBuilder.h */,
+				3117FB971BAD535000FF073C /* TopChartAlbumsBuilder.m */,
+				3117FB851BAD356000FF073C /* AlbumMeta.h */,
+				3117FB861BAD356000FF073C /* AlbumMeta.m */,
+				3117FB881BAD357100FF073C /* ImageMeta.h */,
+				3117FB891BAD357100FF073C /* ImageMeta.m */,
+				3117FB911BAD3F2900FF073C /* NSDictionary+NullValueFilter.h */,
+				3117FB921BAD3F2900FF073C /* NSDictionary+NullValueFilter.m */,
+			);
+			path = TopChartFetcher;
+			sourceTree = "<group>";
+		};
+		312BD6C61BAD2C6B00AE5B46 /* UserInterfaces */ = {
+			isa = PBXGroup;
+			children = (
+				312BD6C91BAD2C6B00AE5B46 /* TopChartViewController.h */,
+				312BD6CA1BAD2C6B00AE5B46 /* TopChartViewController.m */,
+				312BD6C71BAD2C6B00AE5B46 /* TopChartItemCell.h */,
+				312BD6C81BAD2C6B00AE5B46 /* TopChartItemCell.m */,
+				312BD6CD1BAD2C9500AE5B46 /* TopChartFlowLayout.h */,
+				312BD6CE1BAD2C9500AE5B46 /* TopChartFlowLayout.m */,
+			);
+			path = UserInterfaces;
+			sourceTree = "<group>";
+		};
+		7E59087F300E0A80F1222EA8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				58EC9D466AE7195E02E6E49D /* Pods.debug.xcconfig */,
+				D088222401BEF500C24307FF /* Pods.release.xcconfig */,
+				56D333F6A9E1317F06A8379A /* Pods-ItunesTopChartViewerTests.debug.xcconfig */,
+				0571D3B4180F576091DD0DB8 /* Pods-ItunesTopChartViewerTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,9 +212,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 310FB3B11BAD1E81001884A9 /* Build configuration list for PBXNativeTarget "ItunesTopChartViewer" */;
 			buildPhases = (
+				59DC35CAB670430C30AB19E9 /* Check Pods Manifest.lock */,
 				310FB38B1BAD1E7F001884A9 /* Sources */,
 				310FB38C1BAD1E7F001884A9 /* Frameworks */,
 				310FB38D1BAD1E7F001884A9 /* Resources */,
+				989515A52B2FFC79C6E0EABD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,9 +231,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 310FB3B41BAD1E81001884A9 /* Build configuration list for PBXNativeTarget "ItunesTopChartViewerTests" */;
 			buildPhases = (
+				9A6522B193948125D83A1875 /* Check Pods Manifest.lock */,
 				310FB3A41BAD1E80001884A9 /* Sources */,
 				310FB3A51BAD1E80001884A9 /* Frameworks */,
 				310FB3A61BAD1E80001884A9 /* Resources */,
+				7A7A1F75A68A23B8F011590B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -201,13 +304,85 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		59DC35CAB670430C30AB19E9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7A7A1F75A68A23B8F011590B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ItunesTopChartViewerTests/Pods-ItunesTopChartViewerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		989515A52B2FFC79C6E0EABD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A6522B193948125D83A1875 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		310FB38B1BAD1E7F001884A9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3117FB8A1BAD357100FF073C /* ImageMeta.m in Sources */,
+				3117FB931BAD3F2900FF073C /* NSDictionary+NullValueFilter.m in Sources */,
+				312BD6CF1BAD2C9500AE5B46 /* TopChartFlowLayout.m in Sources */,
 				310FB3971BAD1E7F001884A9 /* AppDelegate.m in Sources */,
+				312BD6CB1BAD2C6B00AE5B46 /* TopChartItemCell.m in Sources */,
+				3117FB871BAD356000FF073C /* AlbumMeta.m in Sources */,
+				3117FB981BAD535000FF073C /* TopChartAlbumsBuilder.m in Sources */,
+				31BC1FE71BADCB02000CB3CC /* AlbumCoverImageFetcher.m in Sources */,
 				310FB3941BAD1E7F001884A9 /* main.m in Sources */,
+				3117FB841BAD354A00FF073C /* TopChartFetcher.m in Sources */,
+				312BD6CC1BAD2C6B00AE5B46 /* TopChartViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,7 +390,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				310FB3AD1BAD1E81001884A9 /* ItunesTopChartViewerTests.m in Sources */,
+				3117FB9A1BADAC0A00FF073C /* TopChartAlbumBuilderTests.m in Sources */,
+				3117FB951BAD444700FF073C /* ImageMetaTests.m in Sources */,
+				3117FB8C1BAD365E00FF073C /* AlbumMetaTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +462,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -322,7 +499,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -331,9 +508,11 @@
 		};
 		310FB3B21BAD1E81001884A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58EC9D466AE7195E02E6E49D /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ItunesTopChartViewer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = YLS.ItunesTopChartViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -342,9 +521,11 @@
 		};
 		310FB3B31BAD1E81001884A9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D088222401BEF500C24307FF /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ItunesTopChartViewer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = YLS.ItunesTopChartViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -353,6 +534,7 @@
 		};
 		310FB3B51BAD1E81001884A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56D333F6A9E1317F06A8379A /* Pods-ItunesTopChartViewerTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = ItunesTopChartViewerTests/Info.plist;
@@ -365,6 +547,7 @@
 		};
 		310FB3B61BAD1E81001884A9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0571D3B4180F576091DD0DB8 /* Pods-ItunesTopChartViewerTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = ItunesTopChartViewerTests/Info.plist;
@@ -394,6 +577,7 @@
 				310FB3B31BAD1E81001884A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		310FB3B41BAD1E81001884A9 /* Build configuration list for PBXNativeTarget "ItunesTopChartViewerTests" */ = {
 			isa = XCConfigurationList;
@@ -402,6 +586,7 @@
 				310FB3B61BAD1E81001884A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
